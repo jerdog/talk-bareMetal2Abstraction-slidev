@@ -192,7 +192,7 @@ And that was just building servers in the late 90s and early 2000s. Think about 
 - Didn't update things until something was broke
 - Large binders of CDs for every OS and program in the company
 - Hotswap was a myth (and no one really used SCSI back then 🤣 )
-- Sneakernet
+- Sneakernet filesharing
 
 [/r/sysadmin](https://www.reddit.com/r/sysadmin/comments/1f6wvlq/what_was_it_like_to_be_a_sysadmin_in_the_90s_or/) horror stories are fun, if not a bit triggering <br /><br />
 [BOFH.](http://www.bofharchive.com/BOFH.html) 'nuf said.
@@ -209,8 +209,9 @@ backgroundSize: contain
 
 
 <!--
-
+The best example of "sneakernet" - the practice of physically transporting data on removable media, like floppy disks or CDs, from one computer to another - was this scene from Office Space. Of course it was the hand delivery of a virus, but it's still valid.
 -->
+
 
 ---
 layout: image
@@ -220,21 +221,40 @@ backgroundSize: contain
 
 
 <!--
-
+To say that the landscape of Information Technology infrastructure has profoundly changed over the past three decades would be putting it lightly. What began in the mid-1990s as a tangible world of physical servers requiring manual racking, configuration, and constant hands-on maintenance has evolved into a very abstracted, automated, service-oriented landscape known as Cloud Native. This evolution represents not merely an incremental improvement but a fundamental shift in how applications are built, deployed, and managed.
 -->
 
+---
+layout: image
+image: /img/slides/tangled-up-in-wires.webp
+backgroundSize: 65%
 ---
 
 
 <!--
+We no longer have to worry about physical servers and data centers. We can spin up new instances in seconds, and we can scale our applications to meet demand without breaking a sweat. Well, for some of us. There's still someone doing that now, but instead of 1 server per app, it's thousands of apps per server. But with this transformation comes a new set of challenges - that are the same as the old challenges in a different way.
+-->
 
+---
+layout: image
+image: /img/slides/new-challenges.jpg
+backgroundSize: center
+---
+
+<!--
+We have to think about things like security, compliance, and cost management in ways that we never had to before. And we have to do it all while keeping up with the rapid pace of change in the industry.
 -->
 
 ---
 
+1. Limitations inherent in managing physical servers ==> adoption of virtualization to improve resource utilization
+2.
+
 
 <!--
+This journey from bare metal to cloud native, where we've abstracted a lot of these things away, all was for a reason, and has had many different stages. It started with the limitations of bare metal servers, which led to the rise of virtualization and the ability to run multiple operating systems on a single physical server. This was followed by the introduction of cloud computing, which allowed us to rent compute resources on demand, rather than having to buy and maintain our own hardware. The rise of DevOps and the cultural shift towards collaboration and automation further accelerated this transformation, breaking down silos between development and operations teams.
 
+The journey from the constraints of bare-metal hardware to the flexibility of the cloud involved several critical stages. It began with the limitations inherent in managing physical servers, leading to the adoption of virtualization to improve resource utilization. This paved the way for Infrastructure as a Service (IaaS) and Platform as a Service (PaaS), which offered compute resources and development platforms on demand. Concurrently, the DevOps movement fostered a cultural shift towards collaboration and automation, breaking down traditional silos. Containerization, popularized by Docker, provided a standardized way to package applications , while orchestration platforms like Kubernetes emerged to manage these containers at scale. These technological and cultural shifts culminated in the Cloud Native approach, characterized by microservices, continuous delivery, and automated management. involves a has not been without its challenges. We've had to learn new tools, new languages, and new ways of thinking about infrastructure. We've had to adapt to a world where everything is constantly changing, and where the only constant is change itself.
 -->
 
 ---
