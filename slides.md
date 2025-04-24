@@ -47,6 +47,7 @@ I did entertain the idea of coming out dressed as Gandalf or Bilbo Baggins, but 
 ---
 layout: two-cols
 class: text-center
+title: "About Me"
 ---
 
 <span style="position: relative; top: 20%;">
@@ -80,6 +81,7 @@ First off, let's start with a little bit about me. My name is Jeremy Meiss, and 
 layout: image
 image: /img/slides/not-the-90s.png
 backgroundSize: contain
+title: "1990s Data Center Photos"
 ---
 
 
@@ -87,6 +89,9 @@ backgroundSize: contain
 Now I do take slight offense at this site and what they classify as "1990s data center photos"... I mean, we did have colour photos back then!
 -->
 
+---
+title: "Me in the 90s"
+layout: center
 ---
 
 ![alt text](/img/slides/me-in-the-90s.jpg){style="resizing: contain; width: 60%; position: relative; margin: auto;"}
@@ -96,6 +101,9 @@ Now I do take slight offense at this site and what they classify as "1990s data 
 I mean look at me in the 90s! These were my graduation photos from high school. Not long after these photos were taken, I started working at an Internet Service Provider in Kansas City as Tech Support.
 -->
 
+---
+title: "Networking Equipment"
+layout: center
 ---
 
 ![alt text](/img/slides/networking-equipment.jpg){style="resizing: contain; width: 60%; position: relative; margin: auto;"}
@@ -246,13 +254,32 @@ We have to think about things like security, compliance, and cost management in 
 -->
 
 ---
+layout: center
+---
 
-1. Limitations inherent in managing physical servers ==> adoption of virtualization to improve resource utilization
-2.
+## Journey from Bare Metal to Cloud Native
 
+<v-clicks>
+
+- Limitations inherent in managing physical servers
+- Adoption of virtualization to improve resource utilization
+- Cloud computing brought on-demand compute resources (virtual Rent-a-Center)
+- DevOps movement pushed collaboration and automation, breaking down silos
+- Containerization provided a standardized way to package applications
+
+</v-clicks>
 
 <!--
 This journey from bare metal to cloud native, where we've abstracted a lot of these things away, all was for a reason, and has had many different stages. It started with the limitations of bare metal servers, which led to the rise of virtualization and the ability to run multiple operating systems on a single physical server. This was followed by the introduction of cloud computing, which allowed us to rent compute resources on demand, rather than having to buy and maintain our own hardware. The rise of DevOps and the cultural shift towards collaboration and automation further accelerated this transformation, breaking down silos between development and operations teams.
+
+- The journey from the constraints of bare-metal hardware to the flexibility of the cloud involved several critical stages:
+  - Limitations inherent in managing physical servers
+  - Adoption of virtualization to improve resource utilization
+  - Cloud computing brought on-demand compute resources (virtual Rent-a-Center)
+  - DevOps movement pushed collaboration and automation, breaking down silos
+  - Containerization provided a standardized way to package applications
+  - Orchestration platforms like Kubernetes emerged to manage these containers at scale
+
 
 The journey from the constraints of bare-metal hardware to the flexibility of the cloud involved several critical stages. It began with the limitations inherent in managing physical servers, leading to the adoption of virtualization to improve resource utilization. This paved the way for Infrastructure as a Service (IaaS) and Platform as a Service (PaaS), which offered compute resources and development platforms on demand. Concurrently, the DevOps movement fostered a cultural shift towards collaboration and automation, breaking down traditional silos. Containerization, popularized by Docker, provided a standardized way to package applications , while orchestration platforms like Kubernetes emerged to manage these containers at scale. These technological and cultural shifts culminated in the Cloud Native approach, characterized by microservices, continuous delivery, and automated management. involves a has not been without its challenges. We've had to learn new tools, new languages, and new ways of thinking about infrastructure. We've had to adapt to a world where everything is constantly changing, and where the only constant is change itself.
 -->
