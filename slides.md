@@ -35,6 +35,7 @@ class:
 layout: image-right
 image: /img/slides/legacy-land-default.webp
 backgroundSize: contain
+layoutClass: openingH2
 ---
 
 # From Bare Metal to Abstraction
@@ -194,6 +195,8 @@ And that was just building servers in the late 90s and early 2000s. Think about 
 
 ## The Dark Ages of IT
 
+<v-clicks>
+
 - No online documentation
 - Power switch kicked off meant a 30-minute drive to the data center
 - Data recovery bandwidth as fast as a car loaded with tapes could drive
@@ -202,8 +205,19 @@ And that was just building servers in the late 90s and early 2000s. Think about 
 - Hotswap was a myth (and no one really used SCSI back then 🤣 )
 - Sneakernet filesharing
 
+</v-clicks>
+
+<v-click>
+
 [/r/sysadmin](https://www.reddit.com/r/sysadmin/comments/1f6wvlq/what_was_it_like_to_be_a_sysadmin_in_the_90s_or/) horror stories are fun, if not a bit triggering <br /><br />
+
+</v-click>
+
+<v-click>
+
 [BOFH.](http://www.bofharchive.com/BOFH.html) 'nuf said.
+
+</v-click>
 
 <!--
 
@@ -246,15 +260,13 @@ We no longer have to worry about physical servers and data centers. We can spin 
 ---
 layout: image
 image: /img/slides/new-challenges.jpg
-backgroundSize: center
+backgroundSize: contain
 ---
 
 <!--
 We have to think about things like security, compliance, and cost management in ways that we never had to before. And we have to do it all while keeping up with the rapid pace of change in the industry.
 -->
 
----
-layout: center
 ---
 
 ## Journey from Bare Metal to Cloud Native

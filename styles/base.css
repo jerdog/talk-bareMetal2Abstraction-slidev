@@ -1,0 +1,72 @@
+:root {
+    --slidev-theme-default-headingBg: var(--slidev-theme-accents-blue);
+}
+
+.slidev-layout.section h1::before, .slidev-layout[layout="section"] h1::before { background: var(--slidev-theme-section-headingBg);}
+.slidev-layout.section h2::before, .slidev-layout[layout="default"] h2::before { background: var(--slidev-theme-accents-yellow);}
+.slidev-layout.default h1::before, .slidev-layout[layout="default"] h1::before {background: var(--slidev-theme-section-headingBg);}
+.slidev-layout.default h2::before, .slidev-layout[layout="default"] h2::before {background: var(--slidev-theme-section-headingBg); text-align: center;}
+
+.slidev-layout h3 {text-align: center;}
+.slidev-layout li {margin-left: 0.75em; font-size: larger;}
+
+.slidev-layout.default li {justify-content: center;}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+
+h1 {
+    background: var(--slidev-theme-accents-blue);
+    transform: rotate(-3deg);
+    color: var(--slidev-theme-default-headingColor);
+    margin-left: -0.25em;
+    margin-top: -0.25em;
+    box-shadow: var(--slidev-theme-header-shadow);
+    display: inline-block;
+    padding: 0.25em;
+    position: relative;
+    margin-bottom: 1em;
+    z-index: 1;
+}
+h2::before { background: var(--slidev-theme-accents-yellow);}
+h2 {
+    background: var(--slidev-theme-accents-yellow);
+    transform: rotate(-1deg);
+    color: var(--slidev-theme-default-headingColor);
+    margin-left: -0.25em;
+    margin-top: -0.25em;
+    box-shadow: var(--slidev-theme-header-shadow);
+    display: inline-block;
+    padding: 0.25em;
+    position: relative;
+    margin-bottom: 1em;
+    z-index: 1;
+    width: fit-content;
+}
+h3 {
+    background: var(--slidev-theme-accents-teal);
+    transform: rotate(-1deg);
+    color: var(--slidev-theme-default-headingColor);
+    margin-left: -0.25em;
+    margin-top: -0.25em;
+    box-shadow: var(--slidev-theme-header-shadow);
+    display: inline-block;
+    padding: 0.25em;
+    position: relative;
+    margin-bottom: 1em;
+    z-index: 1;
+}
+h4 {
+    margin: 1em;
+}
+
+.col-header {
+    justify-items: center;
+}
+.col-left, .col-right {
+    /* margin: -25px; */
+    space-between: 5px;
+}
