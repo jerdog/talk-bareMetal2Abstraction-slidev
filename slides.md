@@ -117,6 +117,7 @@ I eventually moved into the Network Operations Center, and became a SysAdmin and
 layout: two-cols-header
 class: text-center
 layoutClass: gap-8
+title: "BGP, the 'Two Napkin Protocol'"
 ---
 
 ## BGP, the "Two Napkin Protocol"
@@ -152,6 +153,7 @@ In the early 2000s I was at Sprint where I survived 11 years, and ended up being
 ---
 layout: image
 image: /img/slides/dwarves_server_room.jpg
+title: "Dwarves Server Room"
 ---
 
 <v-clicks>
@@ -168,6 +170,7 @@ Back then there was no such thing as "cloud computing" - it was all about bare m
 layout: image
 image: /img/slides/ordering-a-server.jpg
 backgroundSize: contain
+title: "Ordering a Server"
 ---
 
 <v-clicks>
@@ -184,6 +187,7 @@ The process to get a server was a long and arduous one. You had to go to Dell's 
 layout: image
 image: /img/slides/no-tech-support.jpg
 backgroundSize: contain
+title: "No Tech Support"
 ---
 
 
@@ -191,6 +195,77 @@ backgroundSize: contain
 And that was just building servers in the late 90s and early 2000s. Think about all of the other things we had to do back then. We had to manually configure just about everything, from the network settings to the operating system. And if something went wrong, well, good luck trying to figure out what it was because online docs and support systems weren't available. We didn't have the luxury of cloud providers and their fancy dashboards and APIs. There was no ClickOps. We had to rely on our own wits and a lot of trial and error.
 -->
 
+---
+layout: image
+image: /img/slides/cloud-transformation.jpg
+backgroundSize: contain
+title: "Cloud Transformation"
+---
+
+
+<!--
+To say that the landscape of Information Technology infrastructure has profoundly changed over the past three decades would be putting it lightly. What began in the mid-1990s as a tangible world of physical servers requiring manual racking, configuration, and constant hands-on maintenance has evolved into a very
+-->
+
+---
+layout: image
+image: /img/slides/cncf-landscape.png
+backgroundSize: contain
+title: "CNCF Landscape"
+---
+
+<!--
+abstracted, automated, service-oriented landscape known as Cloud Native. This evolution represents not merely an incremental improvement but a fundamental shift in how applications are built, deployed, and managed.
+-->
+
+
+---
+layout: center
+class: text-center
+---
+
+> "We are stuck with technology when what we really want is just stuff that works."
+
+ -Douglas Adams
+
+<!--
+I mean who doesn't love a good Douglas Adams quote? I think it sums up the evolution of technology quite well. We started with bare metal servers, and now we have cloud-native computing. But at the end of the day, we just want stuff that works.
+-->
+
+---
+layout: two-cols
+class: text-center
+layoutClass: gap-8
+title: "Cloud Dashboards"
+---
+
+![alt text](/img/slides/gcp-dashboard.webp){style="position: relative; margin: 25% auto;"}
+
+::right::
+
+![alt text](/img/slides/aws-console.png){style="position: relative; margin: 20% auto;"}
+
+
+<!--
+We no longer have to worry about physical servers and data centers. We can spin up new instances in seconds, and we can scale our applications to meet demand without breaking a sweat.
+-->
+
+---
+layout: image
+image: /img/slides/tangled-up-in-wires.webp
+backgroundSize: 65%
+title: "Tangled Up in Wires"
+---
+
+
+<!--
+Well, at least some of us. There's still someone doing that now, but instead of 1 server per app, it's thousands of apps per server. But with this transformation comes a new set of challenges - that are the same as the old challenges in a different way.
+-->
+
+---
+title: "The Dark Ages of IT"
+layout: center
+title: "The Dark Ages of IT"
 ---
 
 ## The Dark Ages of IT
@@ -227,6 +302,7 @@ And that was just building servers in the late 90s and early 2000s. Think about 
 layout: image
 image: /img/slides/sneakernet-2x.gif
 backgroundSize: contain
+title: "Sneakernet"
 ---
 
 
@@ -237,36 +313,18 @@ The best example of "sneakernet" - the practice of physically transporting data 
 
 ---
 layout: image
-image: /img/slides/cloud-transformation.jpg
-backgroundSize: contain
----
-
-
-<!--
-To say that the landscape of Information Technology infrastructure has profoundly changed over the past three decades would be putting it lightly. What began in the mid-1990s as a tangible world of physical servers requiring manual racking, configuration, and constant hands-on maintenance has evolved into a very abstracted, automated, service-oriented landscape known as Cloud Native. This evolution represents not merely an incremental improvement but a fundamental shift in how applications are built, deployed, and managed.
--->
-
----
-layout: image
-image: /img/slides/tangled-up-in-wires.webp
-backgroundSize: 65%
----
-
-
-<!--
-We no longer have to worry about physical servers and data centers. We can spin up new instances in seconds, and we can scale our applications to meet demand without breaking a sweat. Well, for some of us. There's still someone doing that now, but instead of 1 server per app, it's thousands of apps per server. But with this transformation comes a new set of challenges - that are the same as the old challenges in a different way.
--->
-
----
-layout: image
 image: /img/slides/new-challenges.jpg
 backgroundSize: contain
+title: "New Challenges"
 ---
 
 <!--
 We have to think about things like security, compliance, and cost management in ways that we never had to before. And we have to do it all while keeping up with the rapid pace of change in the industry.
 -->
 
+---
+layout: center
+title: "The Journey"
 ---
 
 ## Journey from Bare Metal to Cloud Native
@@ -275,7 +333,7 @@ We have to think about things like security, compliance, and cost management in 
 
 - Limitations inherent in managing physical servers
 - Adoption of virtualization to improve resource utilization
-- Cloud computing brought on-demand compute resources (virtual Rent-a-Center)
+- Cloud computing brought on-demand compute resources (a virtual Rent-a-Center)
 - DevOps movement pushed collaboration and automation, breaking down silos
 - Containerization provided a standardized way to package applications
 
@@ -297,35 +355,261 @@ The journey from the constraints of bare-metal hardware to the flexibility of th
 -->
 
 ---
+layout: image
+image: /img/slides/first-principles-thinking.jpeg
+backgroundSize: contain
+title: "First Principles Thinking"
+---
 
+<!--
+I think it's important for those here who have spent their entire careers in the cloud to understand where we've come from, which has influenced why we're here.
+-->
+
+---
+layout: two-cols-header
+layoutClass: gap-8
+title: "Core Foundational Elements - Automation"
+---
+
+## Core Foundational Elements
+
+### Automation
+
+::left::
+
+### Past
+
+![alt text](/img/slides/disk-installs.jpg){style="width: 70%; position: relative; margin: auto;"}
+
+::right::
+
+<v-click>
+
+### Present
+
+```yml
+provider "aws" {
+  alias  = "us_east_1"
+  region = "us-east-1"
+}
+
+module "my_site" {
+  source = "git::ssh://git@github.com/......"
+
+  site_domain = "hello.example.com"
+}
+
+resource "aws_s3_bucket_object" "my_index" {
+  bucket       = "${module.my_site.bucket_name}"
+  key          = "index.html"
+  content      = "<pre>Hello World!</pre>"
+  content_type = "text/html; charset=utf-8"
+}
+
+output "bucket_name" {
+  description = "S3 bucket name"
+  value       = "${module.my_site.bucket_name}"
+}
+```
+
+</v-click>
+
+<!--
+From the early days of manual system administration to today's cloud-native environments, automation has been a driving force. The automation of tasks like deploying new servers or scaling applications helps create faster and more efficient systems. [click]From a sysadmin having to manually install software stacks using stacks of floppy disks.... [click] to the use of Infrastructure as Code (IaC) tools like Terraform, which allow us to define our infrastructure in code and automate the provisioning process based on demand, using tools like Kubernetes to manage containerized applications.
+-->
+
+---
+layout: two-cols-header
+layoutClass: gap-8
+title: "Core Foundational Elements - Standardization"
+---
+
+## Core Foundational Elements
+
+### Standardization
+
+::left::
+
+### Past
+
+
+::right::
+
+<v-click>
+
+### Present
+
+
+</v-click>
+
+
+<!--
+Standardization ensures that different systems and components can work together. Standardized network protocols are what allows all devices to talk to one another. **Past**: Attempting to get different software components or applications to communicate often involved relying on complex, sometimes proprietary, middleware or struggling with disparate protocols, making integration a costly and time-consuming effort. [click]**Present**: Standardized APIs (like REST) and protocols (like HTTP) allow microservices to communicate effectively and easily integrate in a cloud native environment, enabling faster development and deployment of distributed systems.
+-->
+
+---
+layout: two-cols-header
+layoutClass: gap-8
+title: "Core Foundational Elements - Scalability"
+---
+
+## Core Foundational Elements
+
+### Scalability
+
+::left::
+
+### Past
+
+
+::right::
+
+<v-click>
+
+### Present
+
+
+</v-click>
+
+
+<!--
+The ability to increase the capacity of a system to handle greater workloads is crucial. Early systems had limited scaling potential, while cloud native systems are designed for horizontal scalability, and handle sudden spikes in traffic. [click]**Past**: Physical servers having to be provisioned months in advance of expected use. [click]**Present**: Auto-scaling features in cloud platforms automatically adjust resources.
+-->
+
+---
+layout: two-cols-header
+layoutClass: gap-8
+title: "Core Foundational Elements - Resilience"
+---
+
+## Core Foundational Elements
+
+### Resilience
+
+::left::
+
+### Past
+
+
+::right::
+
+<v-click>
+
+### Present
+
+
+</v-click>
+
+
+<!--
+Systems must be able to withstand failures and continue operating. From building redundant systems by hand, to today's cloud platforms with built in fault tolerance. [click]**Past**: Administrators manually configuring back up servers. [click]**Present**: Cloud environments use clusters of independent instances, data replication and automatic failover in the case of a node outage.
+-->
+
+---
+layout: two-cols-header
+layoutClass: gap-8
+title: "Core Foundational Elements - Security"
+---
+
+## Core Foundational Elements
+
+### Security
+
+> "If you think technology can solve your security problems, then you don't understand the problems, and you don't understand the technology." <br />_-Bruce Schneier_, security technologist
+
+::left::
+
+::right::
+
+
+
+<!--
+Protecting systems and data has always been important. Older security was often an afterthought, while modern cloud systems have security designed in from the start. [click]**Past**: Firewalling off entire networks of computers. [click]**Present**: Zero trust architecture and DevSecOps processes to build security in from the start, not as an afterthought.
+-->
+
+---
+layout: two-cols-header
+layoutClass: gap-8
+title: "Core Foundational Elements - Security"
+---
+
+## Core Foundational Elements
+
+### Security
+
+::left::
+
+### Past
+
+
+::right::
+
+<v-click>
+
+### Present
+
+
+</v-click>
+
+
+<!--
+Protecting systems and data has always been important. Older security was often an afterthought, while modern cloud systems have security designed in from the start. [click]**Past**: Firewalling off entire networks of computers. [click]**Present**: Zero trust architecture and DevSecOps processes to build security in from the start, not as an afterthought.
+-->
+
+---
+title: "Future Challenges"
+---
+
+## Future Challenges
+
+<v-clicks>
+
+* Practitioner Experience + AI-Driven Operations
+* Expanding Cloud Boundaries
+* Sustainability and Efficiency Focus
+* Continued Open Ecosystem Growth
+
+</v-clicks>
+
+<!--
+[click]**AI-Driven Operations & Developer Experience:** The future involves integrating Artificial Intelligence for more predictive, automated IT operations (AIOps) and adopting platform engineering to manage complexity and provide enhanced self-service capabilities for developers. [click]**Expanding Cloud Boundaries:** Cloud-native principles are extending beyond traditional data centers into edge computing, bringing processing closer to data sources, while technologies like WebAssembly (Wasm) promise lightweight, portable execution for serverless and edge scenarios. [click]**Sustainability and Efficiency Focus:** Optimizing for energy and resource efficiency through GreenOps practices is becoming an increasingly critical consideration within cloud environments. [click]**Continued Open Ecosystem Growth:** The Cloud Native Computing Foundation (CNCF) continues to be vital in fostering open standards and a vendor-neutral ecosystem, driving future innovation and ensuring accessibility of cloud-native technologies.
+-->
+
+---
+layout: center
+class: text-center
+---
+
+> "I learned to always take on things I’d never done before. <br />Growth and comfort do not coexist."
+
+ -Ginni Rometty, former IBM CEO
 
 <!--
 
 -->
 
 ---
-
-
-<!--
-
--->
-
+layout: two-cols
+layoutClass: gap-8
 ---
 
 
-<!--
+<div style="padding-top:200px; align-items: center; justify-content: center; margin: 0 auto; display: flex;">
 
--->
+  <h2>Thank you!</h2>
 
----
+</div>
 
+::right::
 
-<!--
-
--->
-
----
-
+<div class="text-left" style="padding-left: 75px;">
+  <p><img src="/img/bluesky-logo.svg" style="vertical-align: middle; display: inline; margin: 5px; max-height:50px; padding-right:10px">@jerdog.dev</p>
+  <p><img src="/img/linkedin.png" style="vertical-align: middle; display: inline; margin: 5px; max-height:50px; padding-right:10px">/in/jeremymeiss</p>
+  <p><img src="/img/devto.png" style="vertical-align: middle; display: inline; margin: 5px; max-height:50px; padding-right:10px">@jerdog</p>
+  <p><img src="/img/mastodon.png" style="vertical-align: middle; display: inline; margin: 5px; max-height:50px; padding-right:10px">@jerdog@hachyderm.io</p>
+  <p><img src="/img/www.png" style="vertical-align: middle; display: inline; margin: 5px; max-height:50px; padding-right:10px">jmeiss.me</p>
+  <p style="text-decoration: line-through;"><img src="/img/twitter.png" style="vertical-align: middle; display: inline; margin: 5px; max-height:50px; padding-right:10px;">@IAmJerdog</p>
+</div>
 
 <!--
 
