@@ -78,9 +78,12 @@ class: text-center
 backgroundColor: black
 ---
 
-A long time ago...
+A long time ago, in a data center far, far away...{style="color: gold; font-size: 2.5em; line-height: 1.5em;"}
 
 
+<!--
+So, let's start with a little bit of history. A long time ago, in a data center far, far away...
+-->
 
 ---
 layout: image
@@ -163,7 +166,9 @@ class: text-center
 ![alt text](/img/slides/cubicle_image.png){style="resizing: contain; top: 20%; width: 50%; position: absolute; margin: auto;"}
 
 <!--
-In the early 2000s I was at Sprint where I survived 11 years, and ended up being shadow IT for the Network Services department. I started automating and migrating intricate Excel spreadsheets and Access databases to ASP web applications with MySQL and had a whole server farm under my desk. By which I mean 3 Dell OptiPlex desktops fully upgraded running VMWare and VirtualBox.
+In the early 2000s I was at Sprint where I survived 11 years, and ended up being shadow IT for the Network Services department. Who else was "Shadow IT?" Who still is?
+
+I started automating and migrating intricate Excel spreadsheets and Access databases to ASP web applications with MySQL and had a whole server farm under my desk. By which I mean 3 Dell OptiPlex desktops fully upgraded running VMWare and VirtualBox.
 
 I couldn't find a good image of what my desk looked like, and only Claude could create one that came close to depicting my cubicle.
 -->
@@ -186,6 +191,18 @@ Back then there was no such thing as "cloud computing" - it was all about bare m
 
 ---
 layout: image
+image: /img/slides/dell-order-screen.png
+backgroundSize: contain
+title: "Dell Order Screen"
+---
+
+
+<!--
+The process to get a server was a long and arduous one. You had to go to Dell's website, customize what you wanted, and then send it over to IT fulfillment, wait for your manager to approve, then wait for the hardware to be ordered, and then shipped - a process that took a few months.
+-->
+
+---
+layout: image
 image: /img/slides/ordering-a-server.jpg
 backgroundSize: contain
 title: "Ordering a Server"
@@ -194,11 +211,10 @@ title: "Ordering a Server"
 <v-clicks>
   <v-click>&nbsp;</v-click>
   <v-click>&nbsp;</v-click>
-  <v-click>&nbsp;</v-click>
 </v-clicks>
 
 <!--
-The process to get a server was a long and arduous one. You had to go to Dell's website, customize what you wanted, and then send it over to IT fulfillment, wait for your manager to approve, then wait for the hardware to be ordered, and then shipped - a process that took a few months. [click]Meanwhile you had to submit an IT ticket to let them know a server was being shipped to a specific data center and that you needed space, and then they would eventually assign a rack, [click]and then you would have to submit a different ticket to a different team to schedule a time for you to come into the data center to set it up, and another ticket to get the cabling ran, and another to get an IP address assigned. [click]And if you were lucky, you might get a server within a month or two. But if you were really unlucky, you might have to wait six months or more. And that was before you had to install and configure everything.
+Meanwhile you had to submit an IT ticket to let them know a server was being shipped to a specific data center and that you needed space, and then they would eventually assign a rack, [click]and then you would have to submit a different ticket to a different team to schedule a time for you to come into the data center to set it up, and another ticket to get the cabling ran, and another to get an IP address assigned. [click]And if you were lucky, you might get a server within a month or two. But if you were really unlucky, you might have to wait six months or more. And that was before you had to install and configure everything.
 -->
 
 ---
@@ -447,6 +463,7 @@ title: "Core Foundational Elements - Standardization"
 
 ### Past
 
+![alt text](/img/slides/diff-ports.jpg){style="width: 60%; position: relative; margin: auto;"}
 
 </v-click>
 
@@ -456,6 +473,7 @@ title: "Core Foundational Elements - Standardization"
 
 ### Present
 
+![alt text](/img/slides/REST-API.webp){style="width: 70%; position: relative; margin: auto;"}
 
 </v-click>
 
@@ -480,6 +498,7 @@ title: "Core Foundational Elements - Scalability"
 
 ### Past
 
+![alt text](/img/slides/vintage-servers.webp){style="width: 60%; position: relative; margin: auto;"}
 
 </v-click>
 
@@ -489,12 +508,13 @@ title: "Core Foundational Elements - Scalability"
 
 ### Present
 
+![alt text](/img/slides/aws-autoscaling.png){style="position: relative; margin: auto;"}
 
 </v-click>
 
 
 <!--
-The ability to increase the capacity of a system to handle greater workloads is crucial. Early systems had limited scaling potential, while cloud native systems are designed for horizontal scalability, and handle sudden spikes in traffic. [click]**Past**: Physical servers having to be provisioned months in advance of expected use. [click]**Present**: Auto-scaling features in cloud platforms automatically adjust resources.
+The ability to increase the capacity of a system to handle greater workloads is crucial. Early systems had limited scaling potential, while cloud native systems are designed for horizontal scalability, and handle sudden spikes in traffic. [click]**Past**: Physical servers having to be provisioned months in advance of expected use. [click]**Present**: Now we have 6 different names to say that a platform has auto-scaling features to automatically adjust resources.
 -->
 
 ---
@@ -513,6 +533,7 @@ title: "Core Foundational Elements - Resilience"
 
 ### Past
 
+![alt text](/img/slides/veritas.jpg){style="width: 80%; position: relative; margin: auto;"}
 
 </v-click>
 
@@ -522,12 +543,13 @@ title: "Core Foundational Elements - Resilience"
 
 ### Present
 
+![alt text](/img/slides/failover-group.png){style="width: 90%; position: relative; margin: auto;"}
 
 </v-click>
 
 
 <!--
-Systems must be able to withstand failures and continue operating. From building redundant systems by hand, to today's cloud platforms with built in fault tolerance. [click]**Past**: Administrators manually configuring back up servers. [click]**Present**: Cloud environments use clusters of independent instances, data replication and automatic failover in the case of a node outage.
+Systems must be able to withstand failures and continue operating. From building redundant systems by hand, to today's cloud platforms with built in fault tolerance. [click]**Past**: Administrators manually configuring back up servers. Who remembers Veritas Backup Exec? [click]**Present**: Cloud environments use clusters of independent instances, data replication and automatic failover in the case of a node outage.
 -->
 
 ---
@@ -546,6 +568,7 @@ title: "Core Foundational Elements - Security"
 
 ### Past
 
+![alt text](/img/slides/cisco-pix-515e.jpg){style="position: relative; margin: auto;"}
 
 </v-click>
 
@@ -555,12 +578,23 @@ title: "Core Foundational Elements - Security"
 
 ### Present
 
+![alt text](/img/slides/devsecops.png)
 
 </v-click>
 
 
 <!--
 Protecting systems and data has always been important. Older security was often an afterthought, while modern cloud systems have security designed in from the start. [click]**Past**: Firewalling off entire networks of computers. [click]**Present**: Zero trust architecture and DevSecOps processes to build security in from the start, not as an afterthought.
+-->
+
+---
+layout: image
+image: /img/slides/gandalf-a-wizard-is-never-late.gif
+backgroundSize: 80%
+---
+
+<!--
+As Gandalf said, We are where we are today because of the journey we've taken, and the lessons we've learned along the way. So for those of you who will be working on the systems of the future, I have some thoughts on the challenges we are going to face...
 -->
 
 ---
@@ -579,7 +613,7 @@ title: "Future Challenges"
 </v-clicks>
 
 <!--
-[click]**AI-Driven Operations & Developer Experience:** The future involves integrating Artificial Intelligence for more predictive, automated IT operations (AIOps) and adopting platform engineering to manage complexity and provide enhanced self-service capabilities for developers. [click]**Expanding Cloud Boundaries:** Cloud-native principles are extending beyond traditional data centers into edge computing, bringing processing closer to data sources, while technologies like WebAssembly (Wasm) promise lightweight, portable execution for serverless and edge scenarios. [click]**Sustainability and Efficiency Focus:** Optimizing for energy and resource efficiency through GreenOps practices is becoming an increasingly critical consideration within cloud environments. [click]**Continued Open Ecosystem Growth:** The Cloud Native Computing Foundation (CNCF) continues to be vital in fostering open standards and a vendor-neutral ecosystem, driving future innovation and ensuring accessibility of cloud-native technologies.
+[click]**AI-Driven Operations & Developer Experience:** The future involves integrating Artificial Intelligence for more predictive, automated IT operations (AIOps) and adopting platform engineering to manage complexity and provide enhanced self-service capabilities for developers. [click]**Expanding Cloud Boundaries:** Cloud-native principles are extending beyond traditional data centers into edge computing, bringing processing closer to data sources, while technologies like WebAssembly (Wasm) promise lightweight, portable execution for serverless and edge scenarios. [click]**Sustainability and Efficiency Focus:** Optimizing for energy and resource efficiency through GreenOps practices is becoming an increasingly critical consideration within cloud environments. [click]**Continued Open Ecosystem Growth:** Our Open ecosystems are struggling in many cases, and we need to continue to foster open standards and vendor-neutral ecosystems, driving future innovation and ensuring accessibility of cloud-native technologies.
 -->
 
 ---
@@ -592,7 +626,7 @@ class: text-center
  -Ginni Rometty, former IBM CEO
 
 <!--
-
+We have to continue to grow and learn, and take on new challenges. We can't get comfortable with the way things are now, because they will change again. And we have to be ready for it.
 -->
 
 ---
