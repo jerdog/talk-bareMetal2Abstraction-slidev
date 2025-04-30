@@ -12,7 +12,7 @@ info: |
   Over the past 30 years we've seen a quick evolution from bare metal servers and infrastructure to a reliance on Cloud Native practices, principles, and services. But have you ever stopped to think about what it was like before you could just type aws ec2 run-instances --instance-type m2.xlarge or gcloud compute instances create to spin up a new server or service? And how things actually got done when you had to wait 6 months for a server?
   In this talk, Jeremy will walk through infrastructure's evolution from his time in the mid-90s as a SysAdmin at an Internet Provider and shadow IT in the 2000s, to the growth of ,today's cloud native world. He'll highlight the enduring importance of core operational principles and explore how lessons from the "dark ages" of IT, particularly regarding automation and standardization, remain vital in today's cloud-native world. You'll gain a crucial historical context of infrastructure evolution, transforming their understanding from "how" to use the cloud to "why" it works the way it does, hopefully making them better engineers, and also have a chuckle or two.
   https://bsky.app/profile/jerdog.dev/post/3lkiveaaavs24
-conference: ""
+conference: "DevOpsDays Austin 2025"
 socialimg: /img/bluesky-jerdog-white.png
 # https://sli.dev/features/drawing
 drawings:
