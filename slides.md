@@ -78,7 +78,7 @@ class: text-center
 backgroundColor: black
 ---
 
-## A long time ago...
+A long time ago...
 
 
 
