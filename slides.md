@@ -27,6 +27,9 @@ transition: slide-left
 mdc: true
 addons:
   - slidev-component-progress
+fonts:
+  - sans: News Cycle
+  - mono: Fira Code
 ## Current slide
 # apply unocss classes to the current slide
 class:
@@ -68,6 +71,16 @@ title: "About Me"
 <!--
 First off, let's start with a little bit about me. My name is Jeremy Meiss, and I am the Director of Developer Experience and Developer Relations at OneStream Software. I also help organize DevOpsDays Kansas City.
 -->
+
+---
+layout: center
+class: text-center
+backgroundColor: black
+---
+
+## A long time ago...
+
+
 
 ---
 layout: image
