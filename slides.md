@@ -573,7 +573,7 @@ backgroundSize: 80%
 ---
 
 <!--
-As Gandalf said, We are where we are today because of the journey we've taken, and the lessons we've learned along the way. So for those of you who will be working on the systems of the future, I have some thoughts on the challenges we are going to face...
+As Gandalf said, We are where we are today because of the journey we've taken, and the lessons we've learned along the way. So for those of you who will be working on the systems of the future, you've arrived at the right time. And I have some thoughts on the challenges we are going to face...
 -->
 
 ---
