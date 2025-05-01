@@ -563,7 +563,7 @@ title: "Core Foundational Elements - Security"
 
 
 <!--
-Protecting systems and data has always been important. Older security was often an afterthought, while modern cloud systems have security designed in from the start. [click]**Past**: Firewalling off entire networks of computers. [click]**Present**: Zero trust architecture and DevSecOps processes to build security in from the start, not as an afterthought.
+Protecting systems and data has always been important, but older security was often an afterthought, while modern cloud systems have security designed in from the start. [click]**Past**: Firewalling off entire networks of computers. [click]**Present**: Zero trust architecture and DevSecOps processes to build security in from the start, not as an afterthought.
 -->
 
 ---
