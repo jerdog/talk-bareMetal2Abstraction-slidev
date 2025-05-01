@@ -135,7 +135,6 @@ I eventually moved into the Network Operations Center, and became a SysAdmin and
 ---
 layout: two-cols-header
 class: text-center
-layoutClass: gap-8
 title: "BGP, the 'Two Napkin Protocol'"
 ---
 
@@ -634,58 +633,6 @@ layoutClass: gap-8
 <!--
 
 -->
-
----
-
-
-<!--
-
--->
-
----
-
-
-<!--
-
--->
-
----
-
-
-<!--
-
--->
-
----
-
-
-<!--
-
--->
-
----
-
-
-<!--
-
--->
-
----
-
-
-<!--
-
--->
-
----
-
-
-<!--
-
--->
-
----
-
 
 ---
 layout: end
