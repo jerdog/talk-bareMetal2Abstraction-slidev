@@ -166,9 +166,7 @@ class: text-center
 ![alt text](/img/slides/cubicle_image.png){style="resizing: contain; top: 20%; width: 50%; position: absolute; margin: auto;"}
 
 <!--
-In the early 2000s I was at Sprint where I survived 11 years, and ended up being shadow IT for the Network Services department. Who else was "Shadow IT?" Who still is?
-
-I started automating and migrating intricate Excel spreadsheets and Access databases to ASP web applications with MySQL and had a whole server farm under my desk. By which I mean 3 Dell OptiPlex desktops fully upgraded running VMWare and VirtualBox.
+In the early 2000s I was at Sprint where I survived 11 years, and ended up being shadow IT for the Network Services department. Who else was "Shadow IT?" Who still is? I started automating and migrating intricate Excel spreadsheets and Access databases to ASP web applications with MySQL and had a whole server farm under my desk. By which I mean 3 Dell OptiPlex desktops fully upgraded running VMWare and VirtualBox.
 
 I couldn't find a good image of what my desk looked like, and only Claude could create one that came close to depicting my cubicle.
 -->
@@ -237,17 +235,9 @@ title: "The Dark Ages of IT"
 
 ## The Dark Ages of IT
 
-<v-click>
-
-[/r/sysadmin](https://www.reddit.com/r/sysadmin/comments/1f6wvlq/what_was_it_like_to_be_a_sysadmin_in_the_90s_or/) horror stories are fun, if not a bit triggering <br /><br />
-
-</v-click>
-
-<v-click>
+[/r/sysadmin](https://www.reddit.com/r/sysadmin/comments/1f6wvlq/what_was_it_like_to_be_a_sysadmin_in_the_90s_or/) horror stories are fun, if not a bit triggering <br />
 
 [BOFH.](http://www.bofharchive.com/BOFH.html) 'nuf said.
-
-</v-click>
 
 <v-clicks>
 
@@ -262,7 +252,7 @@ title: "The Dark Ages of IT"
 </v-clicks>
 
 <!--
-Has anyone explored the /r/sysadmin subreddit? It's a treasure trove of horror stories from the dark ages of IT. [click]I mean, who doesn't love a good horror story about the time their power switch kicked off and they had to drive 30 minutes to the data center to fix it? Or the time they had to drive to a different state to recover data because the bandwidth was as fast as a car loaded with tapes could drive? [click]And let's not forget about the large binders of CDs for every OS and program in the company. [click]Or the fact that hotswap was a myth, and no one really used SCSI back then. [click]And of course, there was sneakernet - the practice of physically transporting data on removable media, like floppy disks or CDs, from one computer to another.
+Has anyone explored the /r/sysadmin subreddit? It's a treasure trove of horror stories from the dark ages of IT. [click]No documentation. [click]I mean, who doesn't love a good horror story about the time their power switch kicked off and they had to drive 30 minutes to the data center to fix it? [click]Or the time they had to drive to a different state to recover data because the bandwidth was as fast as a car loaded with tapes could drive? [click]We didn't update things until we had to - still don't. [click]And let's not forget about the large binders of CDs for every OS and program in the company. [click]Or the fact that hotswap was a myth, and no one really used SCSI back then. [click]And of course, there was sneakernet.
 -->
 
 ---
@@ -312,7 +302,7 @@ class: text-center
  -Douglas Adams
 
 <!--
-I mean who doesn't love a good Douglas Adams quote? I think it sums up the evolution of technology quite well. We started with bare metal servers, and now we have cloud-native computing. But at the end of the day, we just want stuff that works.
+We started with bare metal servers, and now we have cloud-native computing. But at the end of the day, we just want stuff that works. Thank you Douglas Adams.
 -->
 
 ---
@@ -342,18 +332,7 @@ title: "Tangled Up in Wires"
 
 
 <!--
-Well, at least some of us. There's still someone doing that now, but instead of 1 server per app, it's thousands of apps per server. But with this transformation comes a new set of challenges - that are the same as the old challenges in a different way.
--->
-
----
-layout: image
-image: /img/slides/new-challenges.jpg
-backgroundSize: contain
-title: "New Challenges"
----
-
-<!--
-We have to think about things like security, compliance, and cost management in ways that we never had to before. And we have to do it all while keeping up with the rapid pace of change in the industry.
+Well, at least some of us. There's still someone doing that now, but instead of 1 server per app, it's thousands of apps per server. But with this transformation comes a new set of challenges - that are the same as the old challenges in a different way. Security, scalability, cost-management, etc. - they're all still vaild - but the pace of change is much faster than ever before.
 -->
 
 ---
@@ -376,7 +355,7 @@ title: "The Journey"
 </v-clicks>
 
 <!--
-This journey from the constraints of bare metal to flexibility of the cloud, where we've abstracted a lot of these things away, all was for a reason, and has had many different stages. [click]It started with the limitations of managing bare metal servers, which led to the [click]rise of virtualization and the ability to run multiple operating systems and applications on a single physical server to improve resource utilization. [click]This was followed by the option of virtual Rent-a-Center's (aka cloud computing), which allowed us to rent compute resources on demand, rather than having to buy and maintain our own hardware. [click]The rise of DevOps and the cultural shift towards collaboration and automation further accelerated this transformation, breaking down silos between development and operations teams. [click]Docker popularized containerization, so that applications could be further abstracted away in a standardized way, and then we have seen [click]orchestration platforms like Kubernetes emerged to manage these containers at scale. [click]...
+This journey from the constraints of bare metal to flexibility of the cloud, where we've abstracted a lot of these things away, all was for a reason, and has had many different stages. [click]It started with the limitations of managing bare metal servers at the scale we had, which led to the [click]rise of virtualization and the ability to run multiple operating systems and applications on a single physical server to improve resource utilization - like blades, VMWare, Virtualbox, etc. [click]This was followed by the option of virtual Rent-a-Center's (aka cloud computing), which allowed us to rent compute resources on demand, rather than having to buy and maintain our own hardware. [click]The rise of DevOps and the cultural shift towards collaboration and automation further accelerated this transformation, breaking down silos between development and operations teams. [click]Docker popularized containerization, so that applications could be further abstracted away in a standardized way, and then we have seen [click]orchestration platforms like Kubernetes emerged to manage these containers at scale. [click]...
 -->
 
 ---
@@ -387,7 +366,7 @@ title: "CNCF Landscape"
 ---
 
 <!--
-These technological and cultural shifts have yielded Cloud Native, characterized by microservices, continuous delivery, automated management, and so much more. We've had to learn new tools, new languages, and new ways of thinking about infrastructure. We've had to adapt to a world where everything is constantly changing, and where the only constant is change itself.
+These technological and cultural shifts have yielded Cloud Native, characterized by microservices, continuous delivery, automated management, and so much more. We've had to learn new tools, new languages, and new ways of thinking about infrastructure. But core foundational elements are still there and shape our thinking.
 -->
 
 ---
